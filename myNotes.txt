@@ -1,0 +1,12 @@
+## Template original layout:
+ - Topbar
+ - Nav
+ - Header
+ - About
+ - Service
+ - Feature
+ - Team
+ - Appointment
+ - Testimonials
+ - Footer
+ - BackToTopBtn
