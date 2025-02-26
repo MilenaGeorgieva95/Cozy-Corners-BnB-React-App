@@ -14,47 +14,26 @@ import Topbar from "./components/Topbar";
 function App() {
   return (
     <>
-      {/* <!-- Topbar Start --> */}
       <Topbar />
-      {/* <!-- Topbar End --> */}
 
-      {/* <!-- Navbar Start --> */}
       <Nav />
-      {/* <!-- Navbar End --> */}
 
-      {/* <!-- Header Start --> */}
       <Header />
-      {/* <!-- Header End --> */}
 
-      {/* <!-- About Start --> */}
       <About />
-      {/* <!-- About End --> */}
 
-      {/* <!-- Service Start --> */}
       <Service />
-      {/* <!-- Service End --> */}
 
-      {/* <!-- Feature Start --> */}
       <Feature />
-      {/* <!-- Feature End --> */}
 
-      {/* <!-- Team Start --> */}
       <Team />
-      {/* <!-- Team End --> */}
 
-      {/* <!-- Appointment Start --> */}
       <Appointment />
-      {/* <!-- Appointment End --> */}
 
-      {/* <!-- Testimonial Start --> */}
       <Testimonials />
-      {/* <!-- Testimonial End --> */}
 
-      {/* <!-- Footer Start --> */}
-
-      {/* <!-- Footer End --> */}
       <Footer />
-      {/* <!-- Back to Top --> */}
+
       <BackToTopBtn />
     </>
   );

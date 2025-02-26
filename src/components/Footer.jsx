@@ -110,7 +110,7 @@ export default function Footer() {
               <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
                 &copy;{" "}
                 <a className="border-bottom" href="#">
-                  Your Site Name
+                  Veluxe Motors by Milena Georgieva
                 </a>
                 , All Right Reserved.
               </div>

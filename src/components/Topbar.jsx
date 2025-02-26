@@ -9,11 +9,11 @@ export default function Topbar() {
           <div className="col-lg-7 px-5 text-start">
             <div className="h-100 d-inline-flex align-items-center py-3 me-4">
               <small className="fa fa-map-marker-alt text-primary me-2"></small>
-              <small>123 Street, New York, USA</small>
+              <small>123 Street, Birmingham, UK</small>
             </div>
             <div className="h-100 d-inline-flex align-items-center py-3">
               <small className="far fa-clock text-primary me-2"></small>
-              <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+              <small>Mon - Fri : 09.00 AM - 05.00 PM</small>
             </div>
           </div>
           <div className="col-lg-5 px-5 text-end">

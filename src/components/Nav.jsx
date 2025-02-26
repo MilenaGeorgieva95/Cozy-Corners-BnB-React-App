@@ -9,9 +9,7 @@ export default function Nav() {
           href="index.html"
           className="navbar-brand d-flex align-items-center px-4 px-lg-5"
         >
-          <h1 className="m-0 text-primary">
-            <i className="far fa-hospital me-3"></i>Klinik
-          </h1>
+          <h1 className="m-0 text-primary">Veluxe Motors</h1>
         </a>
         <button
           type="button"
