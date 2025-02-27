@@ -14,8 +14,6 @@ import Topbar from "./components/Topbar";
 function App() {
   return (
     <>
-      <Topbar />
-
       <Nav />
 
       <Header />

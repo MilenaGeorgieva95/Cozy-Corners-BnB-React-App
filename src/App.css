@@ -42,3 +42,30 @@
 .read-the-docs {
   color: #888;
 }
+
+.btn.btn-primary {
+  background-color: #dda15e;
+  color: #283618;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #606c38;
+  color: #ffff;
+}
+
+.navbar {
+  background-color: #0e1209;
+  color: #fefae0;
+}
+.text-primary {
+  color: #fefae0;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fefae0;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+  color: #dda15e;
+}
