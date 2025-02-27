@@ -1,20 +1,32 @@
 .container {
-  background-image: url("../../public/img/yuvraj-singh-tmAynVA_ihE-unsplash.jpg");
-  display: flex;
-  width: 100%;
-  height: 1000px;
+  background-image: url("../../public/img/life-s-captured-sparks-YM0UVOJX-lQ-unsplash.jpg");
+  min-height: 800px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
   align-items: center;
   justify-content: center;
-  color: antiquewhite;
-  opacity: 0.6;
-  background-color: black;
-  background: -moz-radial-gradient(
-    center,
-    ellipse cover,
-    #1f3b08 0%,
-    #627d4d 100%
-  );
+  color: rgb(250, 239, 239);
+}
+
+.sectionWrapper {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  text-align: left;
+}
+
+.section {
+  background-color: #ffff;
+  border-radius: 18px;
+}
+
+.textGreen {
+  color: green;
+  font-size: x-large;
+}
+
+.orSpan {
+  font-size: x-large;
 }

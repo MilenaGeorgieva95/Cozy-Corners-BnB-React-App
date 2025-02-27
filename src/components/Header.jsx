@@ -8,34 +8,51 @@ export default function Header() {
           "container-fluid header bg-primary p-0 mb-5 " + styles.container
         }
       >
-        <div className="row g-0 align-items-center flex-column-reverse flex-lg-row">
-          <div className="col-lg-7 p-5 wow fadeIn" data-wow-delay="0.4s">
-            <h1 className="display-4 text-white mb-5">
-              Unlock the road to your next adventure with our rentals
-            </h1>
+        <div
+          className={
+            "row g-0 align-items-center  flex-lg-row " + styles.sectionWrapper
+          }
+        >
+          <div
+            className={"col-lg-7 p-5 wow fadeIn " + styles.section}
+            data-wow-delay="0.4s"
+          >
+            <h2 className="display-5 text-dark mb-5">
+              <a className="display-6 text-dark" href="#">
+                Reserve a Vehicle
+              </a>{" "}
+              {}
+              <span className={styles.orSpan}>or</span> {}
+              <a href="#">
+                <span className={styles.textGreen}>View Reservation</span>
+              </a>
+            </h2>
+            <p className={"display-6 text-dark mb-5 " + styles.orSpan}>
+              Unlock the road to your next adventure
+            </p>
             <div className="row g-4">
               <div className="col-sm-4">
-                <div className="border-start border-light ps-4">
-                  <h2 className="text-white mb-1" data-toggle="counter-up">
+                <div className="border-start border-dark ps-4">
+                  <h2 className="text-dark mb-1" data-toggle="counter-up">
                     123
                   </h2>
-                  <p className="text-light mb-0">Expert Doctors</p>
+                  <p className="text-dark mb-0">Available Locations</p>
                 </div>
               </div>
               <div className="col-sm-4">
-                <div className="border-start border-light ps-4">
-                  <h2 className="text-white mb-1" data-toggle="counter-up">
+                <div className="border-start border-dark ps-4">
+                  <h2 className="text-dark mb-1" data-toggle="counter-up">
                     1234
                   </h2>
-                  <p className="text-light mb-0">Medical Stuff</p>
+                  <p className="text-dark mb-0">Available Vehicles</p>
                 </div>
               </div>
               <div className="col-sm-4">
-                <div className="border-start border-light ps-4">
-                  <h2 className="text-white mb-1" data-toggle="counter-up">
-                    12345
+                <div className="border-start border-dark ps-4">
+                  <h2 className="text-dark mb-1" data-toggle="counter-up">
+                    123456
                   </h2>
-                  <p className="text-light mb-0">Total Patients</p>
+                  <p className="text-dark mb-0">CarClub Members</p>
                 </div>
               </div>
             </div>
