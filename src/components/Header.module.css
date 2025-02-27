@@ -30,3 +30,12 @@
 .orSpan {
   font-size: x-large;
 }
+
+.searchBtn {
+  padding: 6px 0px;
+}
+
+.subHeading {
+  font-weight: 200;
+  font-size: medium;
+}
