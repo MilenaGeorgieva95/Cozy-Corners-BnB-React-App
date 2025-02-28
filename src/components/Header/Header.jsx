@@ -68,9 +68,7 @@ export default function Header() {
             </form>
 
             {/* New */}
-            {/* <p className={"display-2 text-dark mb-4 " + styles.subHeading}>
-              Unlock the road to your next adventure
-            </p> */}
+
             {/* <div className="row g-4">
               <div className="col-sm-4">
                 <div className="border-start border-dark ps-4">
