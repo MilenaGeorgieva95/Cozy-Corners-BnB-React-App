@@ -1,4 +1,4 @@
-export default function Card({ title, text, btnTxt }) {
+export default function Card() {
   return (
     <>
       <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -9,7 +9,7 @@ export default function Card({ title, text, btnTxt }) {
           >
             <i className="fa fa-heartbeat text-primary fs-4"></i>
           </div>
-          <h4 className="mb-3">{title}</h4>
+          <h4 className="mb-3">title</h4>
           <p className="mb-4">
             Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
             diam stet diam sed stet.

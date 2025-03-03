@@ -7,12 +7,12 @@ export default function Service() {
       <div className="container-xxl py-5">
         <div className="container">
           <div className="row g-4">
-            <Card title={"Deals & Promotions"} />
-            <Card title={"CarClub Membership"} />
-            <Card title={"Luxury Special Moments"} />
-            <Card title={"Road Trip Ready"} />
-            <Card title={"We have the Van for You"} />
-            <Card title={"Electric Vehicle Hire"} />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
           </div>
           <div
             className="display-5 text-center mx-auto mb-5 wow fadeInUp"

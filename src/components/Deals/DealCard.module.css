@@ -1,0 +1,11 @@
+.img {
+  max-height: 15em;
+}
+
+.container {
+  min-height: 17em;
+}
+
+.description {
+  color: black;
+}

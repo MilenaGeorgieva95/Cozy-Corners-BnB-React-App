@@ -1,0 +1,24 @@
+h1 {
+  color: #ffff;
+  font-size: x-large;
+  padding: 1em 0 0.5em 0;
+}
+
+.container {
+  background-color: #006639;
+  margin: 3.5em 0%;
+  width: 100%;
+  height: 10em;
+  padding: 0.5em 2em;
+  border-radius: 0.5rem;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+}
+
+.moto {
+  font-size: large;
+  font-weight: 600;
+  font-family: din-2014, Arial, Helvetica, sans-serif;
+  line-height: 1.33;
+}
