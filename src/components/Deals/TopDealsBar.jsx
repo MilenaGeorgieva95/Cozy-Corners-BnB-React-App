@@ -15,13 +15,13 @@ export default function TopDealsBar() {
               imgSrc={"/img/zachary-nelson-98Elr-LIvD8-unsplash.jpg"}
             />
             <DealCard
-              title={"We Have the Van for You"}
+              title={"Vans Range"}
               btnTxt="Search Vans"
               text="We have small, medium and large vans. Also, specialist vans and more."
               imgSrc={"/img/markus-winkler-3vlGNkDep4E-unsplash.jpg"}
             />
             <DealCard
-              title={"Special Occation Ready"}
+              title={"Special Occation"}
               btnTxt="Luxury Cars"
               text="We offer luxury cars range, perfect for weddings, prom, business trip and more."
               imgSrc={"/img/iacob-hiticas-y0MUwaHJm70-unsplash.jpg"}

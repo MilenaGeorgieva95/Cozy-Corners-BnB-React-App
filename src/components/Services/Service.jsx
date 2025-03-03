@@ -4,6 +4,7 @@ import styles from "./Service.module.css";
 export default function Service() {
   return (
     <>
+      <h2>Meet the UK Car & Van Hire Fleet</h2>
       <div className="container-xxl py-5">
         <div className="container">
           <div className="row g-4">
