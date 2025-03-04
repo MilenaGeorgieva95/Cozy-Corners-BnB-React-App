@@ -1,4 +1,4 @@
-export default function About() {
+export default function Details({ userId }) {
   return (
     <>
       <div className="container-xxl py-5">

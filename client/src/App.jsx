@@ -1,5 +1,4 @@
 import "./App.css";
-import About from "./components/About";
 import Appointment from "./components/Appointment";
 import BackToTopBtn from "./components/Buttons/BackToTopBtn";
 import Feature from "./components/Feature";
@@ -27,8 +26,6 @@ function App() {
       <TopDealsBar />
 
       <CreateCarForm />
-
-      <About />
 
       <Feature />
 

@@ -1,8 +1,8 @@
-export default function CreateCarForm() {
+export default function CreateCarForm({ onClose, onCreate }) {
   return (
     <div className="container">
       <div className="bg-light rounded h-100 d-flex align-items-center p-5">
-        <form>
+        <form onSubmit={onCreate}>
           <div className="row g-3">
             <div className="col-12 col-sm-6">
               <input
@@ -91,36 +91,20 @@ export default function CreateCarForm() {
                 placeholder="Features"
               ></textarea>
             </div>
-            <div className="col-12">
+            <div className="col-9">
               <button className="btn btn-primary w-100 py-3" type="submit">
                 Save New Car
               </button>
             </div>
-
-            {/* <div className="col-12 col-sm-6">
-            <div className="date" id="date" data-target-input="nearest">
-              <input
-                type="text"
-                className="form-control border-0 datetimepicker-input"
-                placeholder="Choose Date"
-                data-target="#date"
-                data-toggle="datetimepicker"
-                style={{ height: "55px" }}
-              />
+            <div className="col-3">
+              <span
+                onClick={onClose}
+                className="btn btn-danger w-100 py-3"
+                type="submit"
+              >
+                Cancel
+              </span>
             </div>
-          </div> */}
-            {/* <div className="col-12 col-sm-6">
-            <div className="time" id="time" data-target-input="nearest">
-              <input
-                type="text"
-                className="form-control border-0 datetimepicker-input"
-                placeholder="Choose Date"
-                data-target="#time"
-                data-toggle="datetimepicker"
-                style={{ height: "55px" }}
-              />
-            </div>
-          </div> */}
           </div>
         </form>
       </div>
