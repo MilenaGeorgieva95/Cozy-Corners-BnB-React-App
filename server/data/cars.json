@@ -28,13 +28,13 @@
       "type": "Electric",
       "transmission": "Automatic",
       "seats": 5,
-      "capacity": 2,
+      "bagsCapacity": 2,
       "features": [
         "Air Conditioning",
         "Electric Vehicle",
         "Estimated driving range - 200 km"
       ],
-      "locations": ["Birmingham", "Coventry", "London"]
+      "location": ["London"]
     },
     "02": {
       "_id": "02",
@@ -44,14 +44,14 @@
       "type": "Hybrid",
       "transmission": "Automatic",
       "seats": 5,
-      "capacity": 2,
+      "bagsCapacity": 2,
       "features": [
         "Air Conditioning",
         "Plug-in Hybrid Vehicle",
         "GPS navigation",
         "Rated No. 4 of Best Subcompact SUVs for 2022 by U.S. News & World Report"
       ],
-      "locations": ["Birmingham", "Coventry", "London"]
+      "location": ["Coventry"]
     },
     "03": {
       "_id": "03",
@@ -61,7 +61,7 @@
       "type": "Electric",
       "transmission": "Automatic",
       "seats": 5,
-      "capacity": 3,
+      "bagsCapacity": 3,
       "features": [
         "Air Conditioning",
         "USB connectivity",
@@ -70,7 +70,7 @@
         "Rear-view camera",
         "Bluetooth audio"
       ],
-      "locations": ["Birmingham", "Coventry", "London"]
+      "location": ["Birmingham"]
     }
   }
 }

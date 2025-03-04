@@ -11,6 +11,7 @@ import Testimonials from "./components/Testimonials";
 import Topbar from "./components/Topbar";
 import TopDealsBar from "./components/Deals/TopDealsBar";
 import LogoBar from "./components/Deals/LogoBar";
+import CreateCarForm from "./components/Cars/CreateCarForm";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
       <LogoBar />
 
       <TopDealsBar />
+
+      <CreateCarForm />
 
       <About />
 
