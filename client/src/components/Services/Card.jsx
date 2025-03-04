@@ -13,7 +13,7 @@ export default function Card({ car }) {
           </div>
           <h4 className="mb-3">{car.brand}</h4>
           <p className="mb-3">{car.model}</p>
-          <PillBtn text="Details" />
+          <span className={styles.detailsBtn}>Details</span>
         </div>
       </div>
     </>
