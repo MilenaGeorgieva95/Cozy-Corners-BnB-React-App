@@ -10,6 +10,7 @@ import Service from "./components/Services/Service";
 import Testimonials from "./components/Testimonials";
 import Topbar from "./components/Topbar";
 import TopDealsBar from "./components/Deals/TopDealsBar";
+import LogoBar from "./components/Deals/LogoBar";
 
 function App() {
   return (
@@ -18,9 +19,11 @@ function App() {
 
       <Header />
 
-      <TopDealsBar />
-
       <Service />
+
+      <LogoBar />
+
+      <TopDealsBar />
 
       <About />
 

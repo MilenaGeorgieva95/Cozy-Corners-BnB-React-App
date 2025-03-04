@@ -33,7 +33,6 @@ export default function TopDealsBar() {
               imgSrc={"/img/giorgio-trovato-qlNNYxkKoDc-unsplash.jpg"}
             />
           </div>
-          <LogoBar />
         </div>
       </div>
     </>

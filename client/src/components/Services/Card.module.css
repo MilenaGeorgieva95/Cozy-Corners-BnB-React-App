@@ -1,5 +1,9 @@
 .imgContainer {
-  background-image: url("./img/zachary-nelson-98Elr-LIvD8-unsplash.jpg");
-  height: 20em;
+  height: 12em;
   width: 100%;
+}
+
+.img {
+  max-width: 100%;
+  height: 100%;
 }
