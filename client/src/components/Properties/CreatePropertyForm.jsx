@@ -1,4 +1,4 @@
-export default function CreateCarForm({ onClose, onCreate }) {
+export default function CreatePropertyForm({ onClose, onCreate }) {
   return (
     <div className="container">
       <div className="bg-light rounded h-100 d-flex align-items-center p-5">

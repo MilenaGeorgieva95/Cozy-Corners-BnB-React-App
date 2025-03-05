@@ -19,7 +19,7 @@ export default function Header() {
           >
             <h2 className="display-5 text-dark mb-4">
               <a className="display-6 text-dark" href="#">
-                Reserve a Vehicle
+                Reserve Your Stay
               </a>{" "}
               {}
               <span className={styles.orSpan}>or</span> {}
@@ -30,32 +30,22 @@ export default function Header() {
               </a>
             </h2>
 
-            {/* New */}
-
             <form className="display-5 text-dark mb-5">
               <div className="row g-4 ">
-                <div className="col-12 col-sm-5">
+                <div className="col-12 col-sm-6">
                   <select
                     className="form-select border-0"
-                    style={{ height: "55px" }}
+                    style={{ height: "55px", fontSize: "18px" }}
                   >
-                    <option defaultChecked>Choose location</option>
-                    <option value="1">Location 1</option>
-                    <option value="2">Location 2</option>
-                    <option value="3">Location 3</option>
+                    <option defaultChecked>
+                      Choose From Our Top Locations
+                    </option>
+                    <option value="bulgaria">Bulgaria</option>
+                    <option value="spain">Spain</option>
+                    <option value="greece">Greece</option>
                   </select>
                 </div>
-                <div className="col-12 col-sm-5">
-                  <select
-                    className="form-select border-0"
-                    style={{ height: "55px" }}
-                  >
-                    <option defaultChecked>Choose Vehicle Type</option>
-                    <option value="1">Vehicle 1</option>
-                    <option value="2">Vehicle 2</option>
-                    <option value="3">Vehicle 3</option>
-                  </select>
-                </div>
+
                 <div className="col-12 col-sm-2">
                   <button
                     className={"btn btn-primary w-100 py-3 " + styles.searchBtn}
@@ -67,9 +57,7 @@ export default function Header() {
               </div>
             </form>
 
-            {/* New */}
-
-            {/* <div className="row g-4">
+            <div className="row g-4">
               <div className="col-sm-4">
                 <div className="border-start border-dark ps-4">
                   <h2 className="text-dark mb-1" data-toggle="counter-up">
@@ -83,7 +71,7 @@ export default function Header() {
                   <h2 className="text-dark mb-1" data-toggle="counter-up">
                     1234
                   </h2>
-                  <p className="text-dark mb-0">Available Vehicles</p>
+                  <p className="text-dark mb-0">Available Properties</p>
                 </div>
               </div>
               <div className="col-sm-4">
@@ -91,29 +79,7 @@ export default function Header() {
                   <h2 className="text-dark mb-1" data-toggle="counter-up">
                     123456
                   </h2>
-                  <p className="text-dark mb-0">CarClub Members</p>
-                </div>
-              </div>
-            </div> */}
-          </div>
-          <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-            <div className="owl-carousel header-carousel">
-              <div className="owl-carousel-item position-relative">
-                <img className="img-fluid" src="img/carousel-1.jpg" alt="" />
-                <div className="owl-carousel-text">
-                  <h1 className="display-1 text-white mb-0">Cardiology</h1>
-                </div>
-              </div>
-              <div className="owl-carousel-item position-relative">
-                <img className="img-fluid" src="img/carousel-2.jpg" alt="" />
-                <div className="owl-carousel-text">
-                  <h1 className="display-1 text-white mb-0">Neurology</h1>
-                </div>
-              </div>
-              <div className="owl-carousel-item position-relative">
-                <img className="img-fluid" src="img/carousel-3.jpg" alt="" />
-                <div className="owl-carousel-text">
-                  <h1 className="display-1 text-white mb-0">Pulmonary</h1>
+                  <p className="text-dark mb-0">TravelClub Members</p>
                 </div>
               </div>
             </div>
