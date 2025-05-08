@@ -1,37 +1,25 @@
 import "./App.css";
-import Appointment from "./components/Appointment";
+import { Routes, Route } from "react-router";
 import BackToTopBtn from "./components/Buttons/BackToTopBtn";
-import Feature from "./components/Feature";
 import Footer from "./components/Footer";
-import Header from "./components/Header/Header";
 import Nav from "./components/Nav";
-import Service from "./components/Services/Service";
-import Testimonials from "./components/Testimonials";
-import Topbar from "./components/Topbar";
-import TopDealsBar from "./components/Deals/TopDealsBar";
-import LogoBar from "./components/Deals/LogoBar";
-import CreateCarForm from "./components/Cars/CreateCarForm";
+import Home from "./components/home/Home";
 
 function App() {
   return (
     <>
       <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
 
-      <Header />
-
-      <Service />
-
-      <LogoBar />
-
-      <TopDealsBar />
-
-      <CreateCarForm />
+        {/* 
 
       <Feature />
 
       <Appointment />
 
-      <Testimonials />
+      <Testimonials /> */}
+      </Routes>
 
       <Footer />
 

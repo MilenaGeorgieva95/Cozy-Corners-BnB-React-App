@@ -1,4 +1,3 @@
-import PillBtn from "../Buttons/PillBtn";
 import styles from "./Card.module.css";
 
 export default function Card({ car }) {

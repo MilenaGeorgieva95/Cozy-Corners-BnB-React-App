@@ -1,13 +1,10 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
-import styles from "./Service.module.css";
-import carsService from "../../api/carsService";
-import PillBtn from "../Buttons/PillBtn";
-import CreateCarForm from "../Cars/CreateCarForm";
+import styles from "./FeaturedCars.module.css";
+import carsService from "../../../api/carsService";
 
-export default function Service() {
+export default function FeaturedCars() {
   const [carsData, setCarsData] = useState([]);
-  const [showCreate, setShowCreate] = useState(false);
 
   useEffect(() => {
     carsService
@@ -18,22 +15,6 @@ export default function Service() {
       })
       .catch((err) => console.log(err));
   }, []);
-
-  const showCreateHandler = () => {
-    setShowCreate(true);
-  };
-
-  const closeCreateHandler = () => {
-    setShowCreate(false);
-  };
-
-  const createCarHandler = async (e) => {
-    e.preventDefault();
-    const formData = Object.fromEntries(new FormData(e.target));
-    const newCar = await carsService.createCar(formData);
-    setCarsData((oldData) => [...oldData, newCar]);
-    setShowCreate(false);
-  };
 
   return (
     <>
@@ -47,19 +28,6 @@ export default function Service() {
         <p className={"display-5 text-dark " + styles.subHeading}>
           Unlock the road to your next adventure
         </p>
-        {showCreate ? (
-          <CreateCarForm
-            onClose={closeCreateHandler}
-            onCreate={createCarHandler}
-          />
-        ) : (
-          <span
-            className="btn btn-primary rounded-pill py-3 px-5 mt-3"
-            onClick={showCreateHandler}
-          >
-            Create Car
-          </span>
-        )}
       </div>
 
       <div className="container-xxl py-5">
