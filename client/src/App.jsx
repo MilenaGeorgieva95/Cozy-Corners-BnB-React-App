@@ -5,11 +5,12 @@ import Feature from "./components/Feature";
 import Footer from "./components/Footer";
 import Header from "./components/Header/Header";
 import Nav from "./components/Nav";
-import Service from "./components/Properties/Featured";
+import Service from "./components/Services/Service";
 import Testimonials from "./components/Testimonials";
 import Topbar from "./components/Topbar";
 import TopDealsBar from "./components/Deals/TopDealsBar";
 import LogoBar from "./components/Deals/LogoBar";
+import CreateCarForm from "./components/Cars/CreateCarForm";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
       <LogoBar />
 
       <TopDealsBar />
+
+      <CreateCarForm />
 
       <Feature />
 

@@ -1,19 +1,20 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
-import styles from "./Featured.module.css";
-import propertiesService from "../../api/propertiesService";
-import CreatePropertyForm from "./CreatePropertyForm";
+import styles from "./Service.module.css";
+import carsService from "../../api/carsService";
+import PillBtn from "../Buttons/PillBtn";
+import CreateCarForm from "../Cars/CreateCarForm";
 
 export default function Service() {
-  const [propertyData, setPropertyData] = useState([]);
+  const [carsData, setCarsData] = useState([]);
   const [showCreate, setShowCreate] = useState(false);
 
   useEffect(() => {
-    propertiesService
-      .getAll()
+    carsService
+      .getAllCars()
       .then((data) => {
         console.log(data);
-        return setPropertyData(data);
+        return setCarsData(data);
       })
       .catch((err) => console.log(err));
   }, []);
@@ -26,11 +27,11 @@ export default function Service() {
     setShowCreate(false);
   };
 
-  const createPropertyHandler = async (e) => {
+  const createCarHandler = async (e) => {
     e.preventDefault();
     const formData = Object.fromEntries(new FormData(e.target));
-    const newProperty = await propertiesService.create(formData);
-    setPropertyData((oldData) => [...oldData, newProperty]);
+    const newCar = await carsService.createCar(formData);
+    setCarsData((oldData) => [...oldData, newCar]);
     setShowCreate(false);
   };
 
@@ -42,21 +43,21 @@ export default function Service() {
         style={{ maxWidth: "70%", padding: "30px" }}
       >
         <div></div>
-        <h3 className="display-5 text-dark mb-2 ">Cozy Corners BnB</h3>
+        <h3 className="display-5 text-dark mb-2 ">Veluxe Motors</h3>
         <p className={"display-5 text-dark " + styles.subHeading}>
-          Find Your Perfect Stay, Where Comfort Meets Adventure
+          Unlock the road to your next adventure
         </p>
         {showCreate ? (
-          <CreatePropertyForm
+          <CreateCarForm
             onClose={closeCreateHandler}
-            onCreate={createPropertyHandler}
+            onCreate={createCarHandler}
           />
         ) : (
           <span
             className="btn btn-primary rounded-pill py-3 px-5 mt-3"
             onClick={showCreateHandler}
           >
-            Create Property
+            Create Car
           </span>
         )}
       </div>
@@ -64,8 +65,8 @@ export default function Service() {
       <div className="container-xxl py-5">
         <div className="container">
           <div className="row g-4">
-            <h2>Featured Properties</h2>
-            {propertyData.map((car) => (
+            <h2>Featured Cars</h2>
+            {carsData.map((car) => (
               <Card key={car._id} car={car} />
             ))}
           </div>
