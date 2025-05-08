@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export default function Footer() {
   return (
     <>
@@ -7,85 +9,88 @@ export default function Footer() {
       >
         <div className="container py-5">
           <div className="row g-5">
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-3 col-md-6 ">
               <h5 className="text-light mb-4">Address</h5>
-              <p className="mb-2">
-                <i className="fa fa-map-marker-alt me-3"></i>123 Street, New
-                York, USA
+              <p className="mb-2 text-start">
+                <i className="fa fa-map-marker-alt me-3"></i>123 Street, Sofia,
+                Bulgaria
               </p>
-              <p className="mb-2">
+              <p className="mb-2 text-start">
                 <i className="fa fa-phone-alt me-3"></i>+012 345 67890
               </p>
-              <p className="mb-2">
-                <i className="fa fa-envelope me-3"></i>info@example.com
+              <p className="mb-2 text-start">
+                <i className="fa fa-envelope me-3"></i>info@veluxe-motors.com
               </p>
               <div className="d-flex pt-2">
-                <a
+                <Link
                   className="btn btn-outline-light btn-social rounded-circle"
-                  href=""
+                  to="/about"
                 >
                   <i className="fab fa-twitter"></i>
-                </a>
-                <a
+                </Link>
+                <Link
                   className="btn btn-outline-light btn-social rounded-circle"
-                  href=""
+                  to="/about"
                 >
                   <i className="fab fa-facebook-f"></i>
-                </a>
-                <a
+                </Link>
+                <Link
                   className="btn btn-outline-light btn-social rounded-circle"
-                  href=""
+                  to="/about"
                 >
                   <i className="fab fa-youtube"></i>
-                </a>
-                <a
+                </Link>
+                <Link
                   className="btn btn-outline-light btn-social rounded-circle"
-                  href=""
+                  to="/about"
                 >
                   <i className="fab fa-linkedin-in"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
               <h5 className="text-light mb-4">Services</h5>
-              <a className="btn btn-link" href="">
-                Cardiology
-              </a>
-              <a className="btn btn-link" href="">
-                Pulmonary
-              </a>
-              <a className="btn btn-link" href="">
-                Neurology
-              </a>
-              <a className="btn btn-link" href="">
-                Orthopedics
-              </a>
-              <a className="btn btn-link" href="">
-                Laboratory
-              </a>
+              <Link className="btn btn-link" to="/reservations/cars">
+                Car Hire
+              </Link>
+              <Link className="btn btn-link" to="/reservations/vans">
+                Van Hire
+              </Link>
+              <Link className="btn btn-link" to="/car-club">
+                CarClub Membership
+              </Link>
+              <Link className="btn btn-link" to="/about">
+                Deals and Promotions
+              </Link>
+              <Link className="btn btn-link" to="/about">
+                Special Occations
+              </Link>
             </div>
             <div className="col-lg-3 col-md-6">
               <h5 className="text-light mb-4">Quick Links</h5>
-              <a className="btn btn-link" href="">
+              <Link className="btn btn-link" to="/about">
                 About Us
-              </a>
-              <a className="btn btn-link" href="">
+              </Link>
+              <Link className="btn btn-link" to="/">
                 Contact Us
-              </a>
-              <a className="btn btn-link" href="">
+              </Link>
+              <Link className="btn btn-link" href="">
                 Our Services
-              </a>
-              <a className="btn btn-link" href="">
+              </Link>
+              <Link className="btn btn-link" href="">
                 Terms & Condition
-              </a>
-              <a className="btn btn-link" href="">
-                Support
-              </a>
+              </Link>
+              <Link className="btn btn-link" to="/about">
+                Careers
+              </Link>
             </div>
             <div className="col-lg-3 col-md-6">
-              <h5 className="text-light mb-4">Newsletter</h5>
-              <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-              <div
+              <h5 className="text-light mb-4">Create Account</h5>
+              <p>
+                Rent or lend vehicles, access exclusive offers, and discover
+                additional benefits.
+              </p>
+              <form
                 className="position-relative mx-auto"
                 style={{ maxWidth: "400px" }}
               >
@@ -100,7 +105,7 @@ export default function Footer() {
                 >
                   SignUp
                 </button>
-              </div>
+              </form>
             </div>
           </div>
         </div>
@@ -109,9 +114,9 @@ export default function Footer() {
             <div className="row">
               <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
                 &copy;{" "}
-                <a className="border-bottom" href="#">
+                <Link className="border-bottom" href="#">
                   Veluxe Motors by Milena Georgieva
-                </a>
+                </Link>
                 , All Right Reserved.
               </div>
               <div className="col-md-6 text-center text-md-end">
@@ -122,9 +127,9 @@ export default function Footer() {
                 Removal License from "https://htmlcodex.com/credit-removal".
                 Thank you for your support. ***/}
                 Designed By{" "}
-                <a className="border-bottom" href="https://htmlcodex.com">
+                <Link className="border-bottom" href="https://htmlcodex.com">
                   HTML Codex
-                </a>
+                </Link>
               </div>
             </div>
           </div>
