@@ -69,7 +69,7 @@ export default function Header() {
 
             {/* New */}
 
-            {/* <div className="row g-4">
+            <div className="row g-4">
               <div className="col-sm-4">
                 <div className="border-start border-dark ps-4">
                   <h2 className="text-dark mb-1" data-toggle="counter-up">
@@ -94,7 +94,7 @@ export default function Header() {
                   <p className="text-dark mb-0">CarClub Members</p>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
           <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
             <div className="owl-carousel header-carousel">
