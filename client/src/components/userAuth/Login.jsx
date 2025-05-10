@@ -1,13 +1,16 @@
+import { useContext } from "react";
 import { useLogin } from "../../api/authApi";
+import { UserContext } from "../contexts/UserContext";
 
 export default function Login() {
+  const { user, setUser } = useContext(UserContext);
   const { login } = useLogin();
   const loginHandler = async (formData) => {
     const formValues = Object.fromEntries(formData);
 
     try {
       const authData = await login(formValues.email, formValues.password);
-      console.log(authData);
+      setUser(authData);
     } catch (error) {
       console.log(error);
     }

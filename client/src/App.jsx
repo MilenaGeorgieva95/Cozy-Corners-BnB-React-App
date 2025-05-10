@@ -7,10 +7,13 @@ import Home from "./components/home/Home";
 import MyProfile from "./components/my-profile/MyProfile";
 import CatalogCars from "./components/catalog/catalog-cars/CatalogCars";
 import Login from "./components/userAuth/Login";
+import { UserContext } from "./components/contexts/UserContext";
+import { useState } from "react";
 
 function App() {
+  const [user, setUser] = useState("");
   return (
-    <>
+    <UserContext.Provider value={{ user, setUser }}>
       <Nav />
       <Routes>
         <Route path="/login" element={<Login />} />
@@ -23,7 +26,7 @@ function App() {
       </Routes>
       <Footer />
       <BackToTopBtn />
-    </>
+    </UserContext.Provider>
   );
 }
 

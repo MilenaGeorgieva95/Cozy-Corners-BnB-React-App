@@ -1,6 +1,11 @@
+import { useContext } from "react";
 import { Link } from "react-router";
+import { UserContext } from "../contexts/UserContext";
 
 export default function Nav() {
+  const { user, setUser } = useContext(UserContext);
+  console.log(user);
+
   return (
     <>
       <nav
