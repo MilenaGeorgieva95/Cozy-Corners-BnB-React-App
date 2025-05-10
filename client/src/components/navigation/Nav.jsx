@@ -43,26 +43,29 @@ export default function Nav() {
             <Link to="/about" className="nav-item nav-link">
               About Us
             </Link>
-            <Link to="/logout" className="nav-item nav-link">
-              Logout
-            </Link>
-            <div className="nav-item dropdown">
-              <Link
-                to="/login"
-                className="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-              >
-                Sign Up
+            {user?.email ? (
+              <Link to="/logout" className="nav-item nav-link">
+                Logout
               </Link>
-              <div className="dropdown-menu rounded-0 rounded-bottom m-0">
-                <Link to="/login" className="dropdown-item">
-                  Login
+            ) : (
+              <div className="nav-item dropdown">
+                <Link
+                  to="/login"
+                  className="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
+                  Sign Up
                 </Link>
-                <Link to="/register" className="dropdown-item">
-                  Register
-                </Link>
+                <div className="dropdown-menu rounded-0 rounded-bottom m-0">
+                  <Link to="/login" className="dropdown-item">
+                    Login
+                  </Link>
+                  <Link to="/register" className="dropdown-item">
+                    Register
+                  </Link>
+                </div>
               </div>
-            </div>
+            )}
           </div>
           <Link
             to="/appointment"

@@ -9,6 +9,7 @@ import CatalogCars from "./components/catalog/catalog-cars/CatalogCars";
 import Login from "./components/userAuth/Login";
 import { UserContext } from "./components/contexts/UserContext";
 import { useState } from "react";
+import Register from "./components/userAuth/Register";
 
 function App() {
   const [user, setUser] = useState("");
@@ -17,6 +18,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/" element={<Home />} />
         <Route path="/my-profile" element={<MyProfile />} />
         <Route path="/catalog-cars" element={<CatalogCars />} />
