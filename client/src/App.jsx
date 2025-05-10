@@ -6,10 +6,11 @@ import Nav from "./components/navigation/Nav";
 import Home from "./components/home/Home";
 import MyProfile from "./components/my-profile/MyProfile";
 import CatalogCars from "./components/catalog/catalog-cars/CatalogCars";
-import Login from "./components/userAuth/Login";
+import Login from "./components/user-auth/Login";
 import { UserContext } from "./components/contexts/UserContext";
 import { useState } from "react";
-import Register from "./components/userAuth/Register";
+import Register from "./components/user-auth/Register";
+import Logout from "./components/user-auth/Logout";
 
 function App() {
   const [user, setUser] = useState("");
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/logout" element={<Logout />} />
         <Route path="/" element={<Home />} />
         <Route path="/my-profile" element={<MyProfile />} />
         <Route path="/catalog-cars" element={<CatalogCars />} />
