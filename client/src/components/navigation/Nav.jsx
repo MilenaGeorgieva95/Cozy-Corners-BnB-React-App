@@ -35,35 +35,29 @@ export default function Nav() {
             <Link to="/car-club" className="nav-item nav-link">
               Car Club
             </Link>
-            {/* <div className="nav-item dropdown">
+            <Link to="/about" className="nav-item nav-link">
+              About Us
+            </Link>
+            <Link to="/logout" className="nav-item nav-link">
+              Logout
+            </Link>
+            <div className="nav-item dropdown">
               <Link
-                href="#"
+                to="/login"
                 className="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
               >
-                Learn
+                Sign Up
               </Link>
               <div className="dropdown-menu rounded-0 rounded-bottom m-0">
-                <Link href="feature.html" className="dropdown-item">
-                  The Company
+                <Link to="/login" className="dropdown-item">
+                  Login
                 </Link>
-                <Link href="team.html" className="dropdown-item">
-                  Events
-                </Link>
-                <Link href="appointment.html" className="dropdown-item">
-                  Appointment
-                </Link>
-                <Link href="testimonial.html" className="dropdown-item">
-                  Testimonial
-                </Link>
-                <Link href="404.html" className="dropdown-item">
-                  404 Page
+                <Link to="/register" className="dropdown-item">
+                  Register
                 </Link>
               </div>
-            </div> */}
-            <Link to="about" className="nav-item nav-link">
-              About Us
-            </Link>
+            </div>
           </div>
           <Link
             to="/appointment"

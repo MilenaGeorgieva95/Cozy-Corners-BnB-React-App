@@ -6,12 +6,14 @@ import Nav from "./components/navigation/Nav";
 import Home from "./components/home/Home";
 import MyProfile from "./components/my-profile/MyProfile";
 import CatalogCars from "./components/catalog/catalog-cars/CatalogCars";
+import Login from "./components/userAuth/Login";
 
 function App() {
   return (
     <>
       <Nav />
       <Routes>
+        <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
         <Route path="/my-profile" element={<MyProfile />} />
         <Route path="/catalog-cars" element={<CatalogCars />} />
