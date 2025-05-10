@@ -1,4 +1,18 @@
+import { useLogin } from "../../api/authApi";
+
 export default function Login() {
+  const { login } = useLogin();
+  const loginHandler = async (formData) => {
+    const formValues = Object.fromEntries(formData);
+
+    try {
+      const authData = await login(formValues.email, formValues.password);
+      console.log(authData);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div className="container d-flex justify-content-center align-items-center min-vh-100 bg-light">
       <div
@@ -7,7 +21,7 @@ export default function Login() {
       >
         <div className="card-body">
           <h4 className="card-title text-center text-success mb-4">LOGIN</h4>
-          <form>
+          <form action={loginHandler}>
             <div className="mb-3">
               <label htmlFor="email" className="form-label text-success">
                 Email address
@@ -18,6 +32,7 @@ export default function Login() {
                 id="email"
                 placeholder="Enter email"
                 required
+                name="email"
               />
             </div>
             <div className="mb-3">
@@ -29,6 +44,7 @@ export default function Login() {
                 className="form-control border-success"
                 id="password"
                 placeholder="Password"
+                name="password"
                 required
               />
             </div>
