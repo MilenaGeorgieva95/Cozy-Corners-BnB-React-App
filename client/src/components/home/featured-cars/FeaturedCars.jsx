@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
 import styles from "./FeaturedCars.module.css";
-import carsService from "../../../api/carsService";
+import { carsService } from "../../../api/carsApi";
 
 export default function FeaturedCars() {
   const [carsData, setCarsData] = useState([]);

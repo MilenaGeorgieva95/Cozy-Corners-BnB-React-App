@@ -26,10 +26,10 @@ export default function Nav() {
             <Link to="/my-profile" className="nav-item nav-link">
               My Profile
             </Link>
-            <Link to="/reservations/cars" className="nav-item nav-link">
+            <Link to="/catalog-cars" className="nav-item nav-link">
               Hire a Car
             </Link>
-            <Link to="/reservations/vans" className="nav-item nav-link">
+            <Link to="/catalog-vans" className="nav-item nav-link">
               Hire a Van
             </Link>
             <Link to="/car-club" className="nav-item nav-link">

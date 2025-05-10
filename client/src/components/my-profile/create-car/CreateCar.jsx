@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CreateCarForm from "./CreateCarForm";
-import carsService from "../../../api/carsService";
+import { carsService } from "../../../api/carsApi";
 import { useNavigate } from "react-router";
 
 export default function CreateCar() {
